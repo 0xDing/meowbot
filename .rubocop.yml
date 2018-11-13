@@ -1,0 +1,15 @@
+inherit_gem:
+  rubocop-scc:
+  - config/default.yml
+  - config/rails.yml
+AllCops:
+  Exclude:
+  - 'db/**/*'
+  - 'vendor/**/*'
+  - 'node_modules/**/*'
+  - 'bin/**/*'
+  - 'etl/**/*'
+Sequioacap/RailsControllerRenderPathsExist:
+  Enabled: false
+Rails/InverseOf:
+  Enabled: false
